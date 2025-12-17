@@ -1,0 +1,13 @@
+// week15-3.cpp 學習計畫 Basic 第五題, 超難 很難想到解法
+// LeetCode 459. Repeated Substring Pattern
+class Solution {
+public:
+    bool repeatedSubstringPattern(string s) {
+        //
+        //
+        string s2 = s + s;
+        string s3 = s2.substr(1,s2.length()-2);
+        return s3.find(s) != string::npos;
+        //
+    }
+};
